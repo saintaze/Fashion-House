@@ -1,32 +1,24 @@
-# Webpack Frontend Starterkit
+# Fashion-House
+A Demo Fashion House Landing Page.
 
-[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
+### Features
++ Intuitive Design
++ Image Parallax
++ Cursor Animation
++ 3d Image Slider
 
-A lightweight foundation for your next webpack based frontend project.
+##### Built With
++ HTML5
++ CSS3
++ JS (Vanilla)
++ Swiper JS
++ Parallax JS 
+
+# Live Version
+
+URL: [Live the Fashion](https://saintaze.github.io/GamesRadar-Clone/)
+
+# Author
+Saintaze [@saintaze](https://github.com/saintaze/)
 
 
-### Installation
-
-```
-npm install
-```
-
-### Start Dev Server
-
-```
-npm start
-```
-
-### Build Prod Version
-
-```
-npm run build
-```
-
-### Features:
-
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
