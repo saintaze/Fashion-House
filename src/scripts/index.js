@@ -1,3 +1,7 @@
 import '../styles/index.scss';
 
-console.log('webpack starterkit');
+import './cursor';
+import './swiperInit';
+import './parallaxInit';
+
+
