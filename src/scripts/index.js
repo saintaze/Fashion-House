@@ -1,6 +1,6 @@
 import '../styles/index.scss';
 
-import './cursor';
+import './script';
 import './swiperInit';
 import './parallaxInit';
 

@@ -9,6 +9,8 @@
   src: url('../fonts/tt.ttf') format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -42,20 +44,25 @@ h1 {
   mix-blend-mode: darken;
   margin: 0;
   text-align: center;
-  opacity: .78;
+  opacity: .75;
 }
 
 .swiper-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   left: 50%;
   margin-left: -50%;
   transition: all .3s;
 }
 
+.slider {
+  position: relative;
+  height: 100vh;
+}
+
 .slide {
-  background-position: 0 10%;
+  background-position: center 11.4%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 8rem 3rem;
@@ -77,33 +84,19 @@ h1 {
 .slide {
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 200px rgba(0,0,0,.8) inset;
 }
 
-
 .slide-1 {
-  background-image: url('../images/cinema.jpg');
+  background-image: url('../images/black.png');
 }
 
 .slide-2 {
-  background-image: url('../images/ramadan.jpg');
+  background-image: url('../images/face.png');
 }
 
 .slide-3 {
-  background-image: url('../images/street.jpg');
-}
-
-
-.swiper-button-prev, .swiper-button-next {
-  outline: none;
-  top: 75%;
-}
-
-.swiper-button-prev {
-  left: 3em;
-}
-
-.swiper-button-next {
-  right: 3em;
+  background-image: url('../images/white.png');
 }
 
 .cursor {
@@ -131,7 +124,7 @@ h1 {
 }
 
 .cursor::before {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .cursor-hover::before {
@@ -148,9 +141,9 @@ h1 {
 }
 
 .cursor-hover::after {
-  border-top: 1px solid white; 
-  border-left-width: 1px;
-  border-right-width: 1px;
+  border-top: 2px solid white; 
+  border-left-width: 2px;
+  border-right-width: 2px;
   transform: rotate(270deg);
   transition: transform .4s linear, border-left-width 0s linear .35s ;
 }
@@ -162,6 +155,12 @@ h1 {
   font-size: 1.2rem;
   display: grid;
   place-items: center;
+  opacity: 0;
+}
+
+.cursor-hover .cursor-text {
+  opacity: 1;
+  transition: all .1s .4s cubic-bezier(.5,-.5,.5,1.5);
 }
 
 
@@ -179,29 +178,28 @@ h1 {
   opacity: 0;
   position: relative;
   backface-visibility: hidden;
-  font-size: 16px;
+  font-size: 1.8rem;
 }
 
 .left-chevron-slide {
-  transform: translateX(-30px);
-  /*left: -3.5rem;*/
+  transform: translateX(-3.3rem);
   opacity: 1;
-  transition: all .4s .22s cubic-bezier(.5,-.5,.5,1.5)
+  transition: all .4s .22s cubic-bezier(.5,-.5,.5,1.5);
 }
 
 .right-chevron-slide {
-  transform: translateX(27.4px);
-  font-size: 13.8px;
-  /*left: 3.5rem;*/
+  transform: translateX(2.95rem);
+  font-size: 1.5rem;
   opacity: 1;
-  transition: all .4s  .22s cubic-bezier(.5,-.5,.5,1.5)
+  transition: all .4s  .22s cubic-bezier(.5,-.5,.5,1.5);
 }
 
 nav {
   text-align: right;
-  height: 7rem;
-  line-height: 7rem;
+  height: 6rem;
+  line-height: 6rem;
   border-bottom: 1px solid #111;
+  transition: all .4s  cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .menu {
@@ -211,9 +209,8 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: #a29996;
+  color: silver;
   margin: 0 1rem;
-
   font-family: tt;
   font-style: normal;
   font-weight: 300;
@@ -225,6 +222,39 @@ nav {
 .menu a:hover {
   color: #ddd;
   transition: all .3s;
+}
+
+.story {
+  height: 100vh;
+  background-color: white;
+  background-color: #141414;
+  color: white;
+  padding: 17rem 19vw;
+}
+
+.story h2{
+  font-size: 4.7rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.story h2 span {
+  font-weight: 500;
+
+}
+
+.story p {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+
 }
 
 
@@ -250,6 +280,10 @@ label {
   h1 {
     font-size: 9.4rem;
   }
+
+  .story {
+    padding: 13rem 19vw;
+  }
 }
 
 
@@ -265,6 +299,18 @@ label {
   .heading {
     top: 57.5% !important;
   }
+
+  .story {
+    padding: 8rem 19vw;
+  }
+
+  .story h2 {
+    font-size: 4rem
+  }
+
+  .story p {
+    font-size: 1.7rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -278,6 +324,22 @@ label {
 
   .heading {
     top: 56.5% !important;
+  }
+
+  .story {
+    padding: 6rem 19vw;
+  }
+
+  .story h2 {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  .story p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
   }
 }
 
@@ -313,6 +375,23 @@ label {
   #toggle:checked + .menu {
     animation: slide .2s forwards;
   }
+
+  #toggle:checked + .menu a:first-child {
+    border-top: 1px solid #181717;
+  }
+
+
+  .story {
+    padding: 3rem 19vw;
+  }
+
+  .story h2 {
+    font-size: 3.4rem;
+  }
+
+  .story p {
+    font-size: 1.3rem;
+  }
 }
 
 @keyframes slide {
@@ -326,6 +405,13 @@ label {
 }
 
 
+@media only screen and (max-width: 390px) {
+  .story h2 {
+    text-align: center;
+  }
+
+} 
+
 @media only screen and (max-width: 320px) { 
   html {
     font-size: 50%
@@ -333,6 +419,20 @@ label {
 
   h1 {
     font-size: 7rem;
+  }
+
+
+  .story {
+    padding: 1.5rem 19vw;
+  }
+
+  .story h2 {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  .story p {
+    font-size: 1.2rem;
   }
 }
 
