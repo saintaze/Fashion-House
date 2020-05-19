@@ -372,6 +372,23 @@ label {
     margin: 0;
   }
 
+  .hamburger {
+    padding: 1.9rem 1.6rem;
+    display: inline-block;
+  }
+
+.hamburger span {
+    width: 2.8rem;
+    background-color: silver;
+    height: 2px;
+    display: block;
+    margin-bottom: .6rem;
+}
+
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
+
   #toggle:checked + .menu {
     animation: slide .2s forwards;
   }
