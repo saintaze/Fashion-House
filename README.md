@@ -6,6 +6,7 @@ A Demo Fashion House Landing Page.
 + Image Parallax
 + Cursor Animation
 + 3d Image Slider
++ Custom dropdown menu
 
 ##### Built With
 + HTML5
@@ -16,7 +17,7 @@ A Demo Fashion House Landing Page.
 
 # Live Version
 
-URL: [Live the Fashion](https://fashion-wild.now.sh/)
+URL: [Live the Fashion](https://gallant-torvalds-70b703.netlify.app/)
 
 # Author
 Saintaze [@saintaze](https://github.com/saintaze/)
