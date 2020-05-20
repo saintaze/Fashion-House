@@ -32,7 +32,7 @@ cont.addEventListener('mousemove', e => {
 
 toggle.addEventListener('change', e => {
   if(e.target.checked){
-  	nav.style.height = '30.2rem';
+  	nav.style.height = '30.8rem';
   }else{
   	nav.style.height = '6rem';
   }
