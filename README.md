@@ -16,7 +16,7 @@ A Demo Fashion House Landing Page.
 
 # Live Version
 
-URL: [Live the Fashion](https://saintaze.github.io/GamesRadar-Clone/)
+URL: [Live the Fashion](https://fashion-wild.now.sh/)
 
 # Author
 Saintaze [@saintaze](https://github.com/saintaze/)
