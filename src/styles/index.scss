@@ -178,7 +178,7 @@ h1 {
   opacity: 0;
   position: relative;
   backface-visibility: hidden;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .left-chevron-slide {
@@ -188,8 +188,8 @@ h1 {
 }
 
 .right-chevron-slide {
-  transform: translateX(2.95rem);
-  font-size: 1.5rem;
+  transform: translateX(3.2rem);
+  font-size: 1.2rem;
   opacity: 1;
   transition: all .4s  .22s cubic-bezier(.5,-.5,.5,1.5);
 }
@@ -283,6 +283,7 @@ label {
 
   .story {
     padding: 13rem 19vw;
+    height: 90vh;
   }
 }
 
@@ -301,7 +302,7 @@ label {
   }
 
   .story {
-    padding: 8rem 19vw;
+    padding: 10rem 19vw;
   }
 
   .story h2 {
@@ -327,7 +328,8 @@ label {
   }
 
   .story {
-    padding: 6rem 19vw;
+    padding: 8rem 19vw;
+    height: 80vh;
   }
 
   .story h2 {
@@ -378,11 +380,11 @@ label {
   }
 
 .hamburger span {
-    width: 2.8rem;
+    width: 2.4rem;
     background-color: silver;
-    height: 2px;
+    height: 2.6px;
     display: block;
-    margin-bottom: .6rem;
+    margin-bottom: .4rem;
 }
 
 .hamburger span:last-child {
@@ -399,7 +401,7 @@ label {
 
 
   .story {
-    padding: 3rem 19vw;
+    padding: 7rem 19vw;
   }
 
   .story h2 {
@@ -440,7 +442,7 @@ label {
 
 
   .story {
-    padding: 1.5rem 19vw;
+    padding: 5rem 19vw;
   }
 
   .story h2 {
