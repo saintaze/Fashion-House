@@ -1,3 +1,5 @@
+import Parallax from 'parallax-js';
+
 var scenes = document.querySelectorAll('.scene');
 
 scenes.forEach(s => {

@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 var swiper = new Swiper('.swiper-container', {
   effect: 'cube', 
   cubeEffect: {
@@ -9,3 +11,5 @@ var swiper = new Swiper('.swiper-container', {
     onlyInViewport: false,
   }
 });
+
+

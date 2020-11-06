@@ -1,7 +1,8 @@
+import 'swiper/dist/css/swiper.min.css';
 import '../styles/index.scss';
 
-import './script';
 import './swiperInit';
 import './parallaxInit';
+import './script';
 
 
